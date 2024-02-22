@@ -1,0 +1,169 @@
+
+
+.container {  display: grid;
+    display: grid;
+  grid-template-columns: 0.1fr 1.5fr 2fr 0.5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.4fr 1.2fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "CompName CompName CompName CompName Nav Nav Nav Nav"
+    ". bigpic bigpic bigpic bigpic bigpic bigpic bigpic"
+    ". picture Tickets Tickets Tickets button button ."
+    ". footer footer footer footer footer footer footer";
+  }
+
+  .Nav {
+    grid-area: Nav;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    margin: 10%;
+}
+
+.nav-links {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links > a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    text-decoration: underline;
+}
+
+.CompName {
+    grid-area: CompName;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    color: white;
+}
+
+.CompBox {
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+
+.main-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+      color: white;
+      font-size: 54px;
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+    justify-content:center;
+    justify-self: center;
+    align-items: center;
+}
+
+.CompName, .Nav {
+    width: 100%;
+}
+
+.bigpic {
+    grid-area: bigpic;
+    height: 100%;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+
+}
+
+
+
+.img-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Fs{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.Tickets {
+    grid-area: Tickets;
+}
+
+.Ticket-card {
+    border-top: 2px solid black;
+    padding: 1em;
+    margin: 2vh 0;
+}
+
+button {
+    padding: 10px 20px;
+      background-color: orange;
+      color: white;
+      border: none;
+      cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+
+#picture {
+    grid-area: picture;
+    height: 100%;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+  .footer {
+    grid-area: footer;
+    background-color: black;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: stretch;
+}
+
+.pic {
+    flex: 1;
+      text-align: center;
+      padding: 10px;
+}
+
+.grid-1 {
+    flex: 1;
+      text-align: center;
+      padding: 10px;
+}
+
+.grid-2 {
+    flex: 1;
+      text-align: center;
+      padding: 10px;
+}
+
+.grid-3 {
+    flex: 1;
+      text-align: center;
+      padding: 10px;
+}
